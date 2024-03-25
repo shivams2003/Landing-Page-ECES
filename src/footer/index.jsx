@@ -74,7 +74,7 @@ const Footer = () => {
                     </Text>
                   </PopoverTrigger>
                   <Portal>
-                    <PopoverContent>
+                    <PopoverContent bg="gray.500" color="white"> 
                       <PopoverArrow />
                       <PopoverCloseButton />
                       <PopoverBody>

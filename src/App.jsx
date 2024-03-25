@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import CarouselApp from "./Carousel/carouselApp";
+
 import Home from "./Home";
 import Hero from "./Hero";
 import { AnimatePresence } from "framer-motion";
 import Footer from "./footer";
+import CarouselApp from "./Carousel/CarouselApp";
 import CustomLogo from "./logo/Logo";
 
 function App() {

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { capsFirst } from "../utils";
-// import "fontsource-inter/500.css";
 import ReactDOM from "react-dom";
 import theme from "./theme";
 
@@ -94,5 +93,4 @@ function CarouselApp() {
     </ChakraProvider>
   );
 }
-
 export default CarouselApp;
