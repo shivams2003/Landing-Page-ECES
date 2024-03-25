@@ -1,0 +1,10 @@
+.customLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Add this if necessary */
+  height: 100vh;
+  background-color: #03001c;
+}
+#image1 {
+  display: none;
+}

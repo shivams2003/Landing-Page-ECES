@@ -1,0 +1,250 @@
+
+
+.hero {
+	max-width: 93.75rem;
+	margin-inline: auto;
+	position: relative;
+	width: 100%;
+}
+
+  .visitBtn:hover {
+	background-color: rgb(241, 146, 146);
+  }
+  
+
+@media screen and (max-width: 48em) {
+	.hero {
+		height: 100vh;
+	}
+}
+
+.hero__container {
+	position: relative;
+	width: 90%;
+	margin-inline: auto;
+	padding-top: 5.3125rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 10;
+}
+
+@media screen and (min-width: 30em) {
+	.hero__container {
+		padding-top: 6.5625rem;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.hero__container {
+		padding-top: 5.9375rem;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	.hero__container {
+		padding-top: 9.375rem;
+	}
+}
+
+.hero__text {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 3.75rem;
+}
+
+@media screen and (min-width: 20em) {
+	.hero__text {
+		margin-bottom: 4.375rem;
+	}
+}
+
+@media screen and (min-width: 30em) {
+	.hero__text {
+		margin-bottom: 4.6875rem;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	.hero__text {
+		margin-bottom: 5.3125rem;
+	}
+}
+
+.hero__name {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	font-family: var(--hero-font-1);
+}
+
+.hero__name::-webkit-scrollbar {
+	display: none;
+}
+
+.hero__status {
+	display: flex;
+	gap: 2.5rem;
+	align-items: center;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 100%;
+	font-family: var(--hero-font-2);
+}
+
+.hero__status::-webkit-scrollbar {
+	display: none;
+}
+
+.hero_marquee {
+	font-size: 2.5rem;
+	letter-spacing: 5pt;
+	line-height: 1;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 20em) {
+	.hero_marquee {
+		font-size: 2.8125rem;
+		letter-spacing: 8pt;
+	}
+}
+
+@media screen and (min-width: 30em) {
+	.hero_marquee {
+		font-size: 3.125rem;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.hero_marquee {
+		font-size: 3.4375rem;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	.hero_marquee {
+		font-size: 3.75rem;
+	}
+}
+
+@media screen and (min-width: 80em) {
+	.hero_marquee {
+		font-size: 4.0625rem;
+	}
+}
+
+@media screen and (min-width: 90em) {
+	.hero_marquee {
+		font-size: 4.6875rem;
+	}
+}
+
+@media screen and (min-width: 120em) {
+	.hero_marquee {
+		font-size: 5.625rem;
+	}
+}
+
+.hero__contactme {
+	position: relative;
+	background-color: transparent;
+	overflow: hidden;
+	border: 1px solid var(--primary-color);
+	border-radius: 1.25rem;
+	height: 2.75rem;
+	width: 7.5rem;
+	padding-inline: 0.75rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--primary-color);
+	cursor: pointer;
+	font-family: var(--JostL-font);
+	letter-spacing: 0.2pt;
+	transition: all 400ms ease-in-out;
+}
+
+@media screen and (min-width: 48em) {
+	.hero__contactme {
+		font-size: 15px;
+		width: 9.375rem;
+		padding-inline: 1.25rem;
+	}
+}
+
+.hero__contactme::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: var(--primary-color);
+	transform: scale(0, 1);
+	transform-origin: center;
+	transition: transform 400ms ease-in-out;
+}
+
+.hero__contactme span,
+.hero__contactme svg {
+	position: relative;
+	z-index: 99;
+	transition: color 400ms ease-in-out;
+}
+
+.hero__contactme svg path {
+	transition: all 400ms ease-in-out;
+}
+
+.hero__contactme svg {
+	height: 1.125rem;
+}
+
+.hero__contactme:hover::before {
+	transform: scale(1);
+}
+
+.hero__contactme:hover span {
+	color: var(--dark-background);
+}
+
+.hero__contactme:hover svg g path {
+	fill: var(--dark-background);
+}
+
+.hero__image {
+	position: relative;
+	z-index: 99;
+	width: 100%;
+	min-height: 15.625rem;
+}
+
+@media screen and (min-width: 20em) {
+	.hero__image {
+		min-height: 31.25rem;
+	}
+}
+
+@media screen and (min-width: 30em) {
+	.hero__image {
+		min-height: 37.5rem;
+	}
+}
+
+@media screen and (min-width: 120em) {
+	.hero__image {
+		min-height: 62.5rem;
+	}
+}
+
+.hero__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
