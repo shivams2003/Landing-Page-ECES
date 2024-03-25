@@ -19,6 +19,7 @@ function App() {
         {!coverAnimationProgress && (
           <>
             <Hero />
+            {/* this carousel is for upcoming events */}
             <CarouselApp />
             <Footer />
           </>
